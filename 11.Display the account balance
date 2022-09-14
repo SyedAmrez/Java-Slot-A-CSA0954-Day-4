@@ -37,22 +37,23 @@ class balance extends details
 {
 	void cal()
 	{
-	int b=1000,de,wi,ba=0;
-	Scanner s=new Scanner(System.in);
-	System.out.print("Deposit an amount: ");
-	de=s.nextInt();
-	ba=b+de;
-	if(ba>500)
-	{
+		int b=1000,de,wi,ba=0,x;
+		Scanner s=new Scanner(System.in);
+		System.out.print("Deposit an amount: ");
+		de=s.nextInt();
+		ba=b+de;
 		System.out.print("Withdraw an amount: ");
 		wi=s.nextInt();
-		ba=ba-wi;
-		System.out.print("Balance= "+ba);
-	}
-	else
-	{
-		System.out.print("No minimum balance");
-	}
+		x=ba-wi;
+		if(x>500)
+		{
+			System.out.print("Balance= "+x);
+		}
+		else
+		{
+			System.out.println("Can not Withdraw \n Minimum balance must be Rs.500.0");
+			System.out.println("Balance= "+ba);
+		}
 	}
 }
 class acco
