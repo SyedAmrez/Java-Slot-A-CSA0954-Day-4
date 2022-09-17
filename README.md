@@ -1,6 +1,6 @@
 # Java-Slot-A-CSA0954-Day-4
 
-1.Find the number of factors for the given number
+1.Find the number of factors for the given number.
 
 2.Write a program to print the given number is Perfect number or not.
 
